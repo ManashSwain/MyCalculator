@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon"  type="png" href="./Images/calculator.png">
+    <title>Calculator</title>
+</head>
+<body>
+    <!-- Main container  -->
+
+    <div class="container">
+        <div class="screenboxarea">
+            <input type="text" id="screenbox">
+        </div>
+        <div class="numbers">
+            <div class="row">
+                <button class="box box1" onclick="screenbox.value += '*'">*</button>
+                <button class="box box1" onclick="screenbox.value += '/'">/</button>
+                <button class="box box1" onclick="screenbox.value += '-'">-</button>
+                <button class="box box1" onclick="screenbox.value += '+'">+</button>
+            </div>
+            <div class="row">
+                <button class="box box2" onclick="screenbox.value += '9' ">9</button>
+                <button class="box box2" onclick="screenbox.value += '8' ">8</button>
+                <button class="box box2" onclick="screenbox.value += '7' ">7</button>
+                <button class="box box2" onclick="screenbox.value += '6' ">6</button>
+            </div>
+            <div class="row">
+                <button class="box box2" onclick="screenbox.value += '5' ">5</button>
+                <button class="box box2" onclick="screenbox.value += '4' ">4</button>
+                <button class="box box2" onclick="screenbox.value += '3' ">3</button>
+                <button class="box box2" onclick="screenbox.value += '2' ">2</button>
+            </div>
+            <div class="row">
+                <button class="box box2" onclick="screenbox.value += '1' ">1</button>
+                <button class="box box2" onclick="screenbox.value += '0' ">0</button>
+                <button class="box box2" onclick="screenbox.value += '.' ">.</button>
+            <button class="box box3" onclick="screenbox.value = eval(screenbox.value)">=</button>
+        </div>
+        <div class="row">
+            <button class="box"  onclick="screenbox.value = '' ">C</button>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
